@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+          var game = ["free fire", "transformer earth war", "dragon city"];
+            var text = '';
+            var i;
+            for (i = 0; i < game.length; i++) {
+                text += game[i] + "<br>";
+            }
+            document.getElementById("p1").innerHTML = text;
+
+        var str = 'free fire';
+        document.write(str.toUpperCase());
+        document.write('<br>');
+        document.write('<br>');
+        document.write(str.toLowerCase());
+        document.write('<br>');
+        document.write('<br>');
+        document.write(str.startsWith('i'));
+        document.write('<br>');
+        document.write('<br>');
+        document.write(str.startsWith('F'));
+        document.write('<br>');
+        document.write('<br>');
+        var patt = new RegExp('ree');
+        document.write(patt.test(str));
+    </script>
+</body>
+</html>
